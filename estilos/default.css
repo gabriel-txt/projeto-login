@@ -18,12 +18,12 @@ body {
         height: 645px;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
         background-color: white;
         border-radius: 25px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
         overflow: hidden;
 
+        transform: translate(-50%, -50%);
         transition: width .3s, height .3s;
         transition-timing-function: ease;
         > div#image {
@@ -42,28 +42,25 @@ body {
                 padding-bottom: 10px;
             }
             > form {
-                > div#emailfield,>div#passfield {
+                > div.login {
+                    display: inline-block;
                     background-color: #5F2C82;
                     width: 100%;
                     margin-top: 10px;
                     border-radius: 10px;
-                    position: relative;
                     > i {
                         color: white;
-                        vertical-align: center;
                         font-size: 40px;
                         padding: 5px;
+                        transform: translate(2px, 8px);
                     }
                     > input {
-                        position: absolute;
-                        width: 83%;
-                        height: 42px;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-40%,-50%);
+                        width: calc(100% - 60px);
+                        height: 55px;
                         border-radius: 7px;
                         border: none;
                         padding: 10px;
+                        transform: translateY(-6px);
                     }
                 }
                 > div#buttonfield {
