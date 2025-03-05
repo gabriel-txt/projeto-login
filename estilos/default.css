@@ -8,6 +8,7 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     position: relative;
     background-color: #5F2C82;
@@ -21,17 +22,20 @@ body {
         background-color: white;
         border-radius: 25px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+        overflow: hidden;
+
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
         > div#image {
             width: 312px;
             height: 250px;
             background: url('../imagens/pexels-rdne-9089256.jpg') center center no-repeat fixed;
             background-size: cover;
-            border-radius: 25px 25px 0 0;
             box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.678);
         }
         > div#loginfield {
             width: 312px;
-            height: 295px;
+            height: 335px;
             padding: 10px;
             > h1 {
                 text-align: center;
@@ -40,6 +44,7 @@ body {
             > form {
                 > div#emailfield,>div#passfield {
                     background-color: #5F2C82;
+                    width: 100%;
                     margin-top: 10px;
                     border-radius: 10px;
                     position: relative;
@@ -51,7 +56,7 @@ body {
                     }
                     > input {
                         position: absolute;
-                        width: 238px;
+                        width: 83%;
                         height: 42px;
                         top: 50%;
                         left: 50%;
@@ -64,7 +69,7 @@ body {
                 > div#buttonfield {
                     margin-top: 10px;
                     > input {
-                        width: 292px;
+                        width: 100%;
                         height: 40px;
                         background-color: #53AAA7;
                         color: white;
@@ -95,3 +100,4 @@ body {
         }
     }
 }
+
