@@ -40,6 +40,13 @@
                 float: right;
                 width: 50%;
                 margin: 82px 0;
+                > h1 {
+                    font-size: 2em;
+                }
+                > p {
+                    text-align: center;
+                    font-size: 1.2em;
+                }
             }
         }
     }   

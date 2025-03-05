@@ -13,15 +13,15 @@
         <div id="image"></div>
         <div id="loginfield">
             <h1>Login</h1>
-            <p>Seja bem-vindo! Faça login para poder acessar sua conta:</p>
-            <form action="login.php" method="post">
-                <div id="emailfield">
+            <p>Seja bem-vindo! Faça login para acessar sua conta:</p>
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="login">
                     <i class="material-symbols-outlined">person</i>
-                    <input type="email" name="useremail" id="iuseremail" placeholder="seu e-mail">
+                    <input type="email" name="useremail" id="iuseremail" placeholder="seu e-mail" autocomplete="email">
                 </div>
-                <div id="passfield">
+                <div class="passfield">
                     <i class="material-symbols-outlined">key</i>
-                    <input type="password" name="userpass" id="iuserpass" placeholder="sua senha" min="8">
+                    <input type="password" name="userpass" id="iuserpass" placeholder="sua senha" min="8" autocomplete="current-password">
                 </div>
                 <div id="buttonfield">
                     <input type="submit" value="Entrar" class="button">
